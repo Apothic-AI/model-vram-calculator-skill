@@ -10,7 +10,7 @@ description: Estimate GPU memory for LLM inference with the vramcalc CLI. Use wh
 ## Setup
 
 1. Run `command -v vramcalc`.
-2. If it is missing, build it with `cd /home/bitnom/Code/vramcalc && go build -o bin/vramcalc ./cmd/vramcalc`. Then call `/home/bitnom/Code/vramcalc/bin/vramcalc` in place of `vramcalc`.
+2. If it is missing, install it with `go install github.com/Apothic-AI/vramcalc/cmd/vramcalc@latest`. That needs Go 1.22 or newer, with `$(go env GOPATH)/bin` on `PATH`. Or clone https://github.com/Apothic-AI/vramcalc and run `go build -o bin/vramcalc ./cmd/vramcalc`, then call that binary in place of `vramcalc`.
 
 ## Workflow
 

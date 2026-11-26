@@ -1,15 +1,16 @@
 # model-vram-calculator-skill
 
-An agent skill (`SKILL.md`) that teaches an agent to estimate LLM inference memory with the `vramcalc` CLI.
-
-- CLI source: `/home/bitnom/Code/vramcalc` (Go).
-- Skill: `SKILL.md` in this folder.
+An agent skill (`SKILL.md`) that teaches an agent to estimate LLM inference memory with the [vramcalc](https://github.com/Apothic-AI/vramcalc) CLI.
 
 ## Install
 
 ```sh
-cd /home/bitnom/Code/vramcalc && go install ./cmd/vramcalc   # puts vramcalc in $(go env GOPATH)/bin
-ln -s /home/bitnom/Code/model-vram-calculator-skill ~/.agents/skills/vramcalc
+go install github.com/Apothic-AI/vramcalc/cmd/vramcalc@latest   # puts vramcalc in $(go env GOPATH)/bin
+git clone https://github.com/Apothic-AI/model-vram-calculator-skill ~/.agents/skills/vramcalc
 ```
 
-Make sure `$(go env GOPATH)/bin` is on your `PATH`.
+Make sure `$(go env GOPATH)/bin` is on your `PATH`. The repo root is the skill folder, so cloning it into your skills directory installs the skill.
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE).
