@@ -5,7 +5,7 @@ An agent skill (`SKILL.md`) that teaches an agent to estimate LLM inference memo
 ## Install
 
 ```sh
-go install github.com/Apothic-AI/vramcalc/cmd/vramcalc@latest   # puts vramcalc in $(go env GOPATH)/bin
+go install github.com/Apothic-AI/vramcalc/cmd/vramcalc@main   # puts vramcalc in $(go env GOPATH)/bin
 git clone https://github.com/Apothic-AI/model-vram-calculator-skill ~/.agents/skills/vramcalc
 ```
 
